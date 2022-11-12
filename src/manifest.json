@@ -1,11 +1,17 @@
 {
     "name": "BIT URL 转换器",
     "description": "转换 BIT 内外 URL。",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "manifest_version": 2,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "bit-webvpn-converter-web-extension@YDX-2147483647"
+        }
+    },
     "permissions": [
         "menus",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "optional_permissions": [
         "clipboardWrite"
@@ -15,7 +21,8 @@
         "persistent": false
     },
     "options_ui": {
-        "page": "/options/options.html"
+        "page": "/options/options.html",
+        "browser_style": true
     },
     "browser_action": {
         "default_popup": "/popup/popup.html",
