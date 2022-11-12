@@ -1,11 +1,13 @@
 {
     "name": "BIT URL 转换器",
     "description": "转换 BIT 内外 URL。",
-    "version": "0.1",
+    "version": "0.1.1",
     "manifest_version": 2,
     "permissions": [
         "menus",
-        "tabs",
+        "tabs"
+    ],
+    "optional_permissions": [
         "clipboardWrite"
     ],
     "background": {

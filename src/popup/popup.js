@@ -25,10 +25,15 @@ open_btn.addEventListener('click', () => {
 copy_btn.addEventListener('click', async () => {
     copy_btn.classList.remove('success', 'failed')
 
-    try {
-        await navigator.clipboard.writeText(target_url)
-        copy_btn.classList.add('success')
-    } catch (error) {
+    const permitted = await browser.permissions.request({ permissions: ['clipboardWrite'] })
+    if (permitted) {
+        try {
+            await navigator.clipboard.writeText(target_url)
+            copy_btn.classList.add('success')
+        } catch (error) {
+            copy_btn.classList.add('failed')
+        }
+    } else {
         copy_btn.classList.add('failed')
     }
 })

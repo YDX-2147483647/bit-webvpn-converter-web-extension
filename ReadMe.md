@@ -32,7 +32,7 @@
   2. 在 Firefox 地址栏输入`about:debugging` →（侧边栏）[此 Firefox](about:debugging#/runtime/this-firefox)。
   3. 临时扩展 → 临时载入附加组件，选择本仓库的`src/manifest.json`。
 
-> 目前两种版本没有功能区别，只是兼容性不同，例如 Chromium 版采用 Manifest V3，而 Firefox 版采用 V2。
+> 目前两种版本几乎没有功能区别，只是兼容性不同，例如 Chromium 版采用 Manifest V3，而 Firefox 版采用 V2。
 
 ## 潜在疑问
 
@@ -40,7 +40,7 @@
 
 - `menus`：在右键菜单增加转换按钮。
 - `tabs`：在新标签页打开转换后的 URL。
-- `clipboardWrite`：复制转换后的 URL。
+- （可选）`clipboardWrite`：复制转换后的 URL。
 
 ### 图标？
 
