@@ -5,7 +5,7 @@ const MENUS = {
     convert_and_open: {
         title: '转换并在新标签页打开',
         id: 'convert-and-open',
-        contexts: ["all"]
+        contexts: ['link', 'page'],
     }
 }
 
@@ -33,7 +33,7 @@ browser.menus.onClicked.addListener((info, tab) => {
     switch (info.menuItemId) {
         case MENUS.convert_and_open.id: {
             browser.tabs.create({
-                url: convert(info.pageUrl).url,
+                url: convert(info.linkUrl ?? info.pageUrl).url,
                 index: tab.index + 1
             })
             break
