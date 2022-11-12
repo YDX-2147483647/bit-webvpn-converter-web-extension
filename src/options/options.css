@@ -1,0 +1,13 @@
+body > section {
+    margin: 2em;
+}
+
+#url-converter {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 0.5em;
+}
+
+#url-converter input {
+    width: min(50em, 100%);
+}

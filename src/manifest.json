@@ -1,0 +1,33 @@
+{
+    "name": "BIT URL 转换器",
+    "description": "转换 BIT 内外 URL。",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "menus",
+        "tabs",
+        "clipboardWrite"
+    ],
+    "background": {
+        "page": "background.html",
+        "persistent": false
+    },
+    "options_ui": {
+        "page": "/options/options.html"
+    },
+    "browser_action": {
+        "default_popup": "/popup/popup.html",
+        "default_icon": {
+            "16": "/images/icon16.png",
+            "32": "/images/icon32.png",
+            "48": "/images/icon48.png",
+            "128": "/images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/icon16.png",
+        "32": "/images/icon32.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    }
+}
