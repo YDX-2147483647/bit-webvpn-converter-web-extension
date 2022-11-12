@@ -1,5 +1,13 @@
 {
     "cSpell.words": [
         "webvpn"
+    ],
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/src/manifest.json"
+            ],
+            "url": "https://json.schemastore.org/webextension.json"
+        }
     ]
 }
