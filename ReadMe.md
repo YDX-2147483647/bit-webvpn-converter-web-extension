@@ -28,7 +28,7 @@
 
   ![redirect](https://s2.loli.net/2022/11/13/bUvpwBuCGyqlQmD.gif)
 
-  此功能默认关闭，需要到“扩展管理页 → 选项 → 重定向”打开。
+  此功能默认关闭，需要到“扩展管理页 → 选项 → 重定向”打开。目前只有 Firefox 版支持。
 
   需规定重定向范围，只要访问的 URL 命中就会转换（自动识别转换方向）并重定向。以下是些示例。
   
@@ -61,8 +61,6 @@
   2. 在 Firefox 地址栏输入`about:debugging` →（侧边栏）[此 Firefox](about:debugging#/runtime/this-firefox)。
   3. 临时扩展 → 临时载入附加组件，选择本仓库的`src/manifest.json`。
 
-> 目前两种版本几乎没有功能区别，主要是兼容性不同，例如 Chromium 版采用 Manifest V3，而 Firefox 版采用 V2。
-
 ## 潜在疑问
 
 ### 为何需要□□权限？
@@ -78,3 +76,8 @@
 ### 图标？
 
 现在的图标是随便画的，随时准备换掉……如果您有想法，可以提出议题（issue）。
+
+## Chromium 版和 Firefox 版有什么区别？
+
+- **兼容性**：Chromium 版采用 Manifest V3，而 Firefox 版采用 V2。
+- **功能**：Chromium 版不支持关闭右键菜单，也不支持“自动重定向”，而 Firefox 版支持。
