@@ -22,6 +22,31 @@
 
   ![options](https://s2.loli.net/2022/11/12/fm7tLS2M8joqBRx.jpg)
 
+- **自动重定向**
+
+  访问校内网页，直接重定向到 Web VPN 相应页面。（反向也可以）
+
+  此功能默认关闭，需要到“扩展管理页 → 选项 → 重定向”打开。
+
+  需规定重定向范围，只要访问的 URL 命中就会转换（自动识别转换方向）并重定向。以下是些示例。
+  
+  ```
+  *://century.bit.edu.cn/*
+  *://cxcy.bit.edu.cn/*
+  *://dekt.bit.edu.cn/*
+  *://dzb.bit.edu.cn/*
+  *://jwms.bit.edu.cn/*
+  *://mec.bit.edu.cn/*
+  *://student.bit.edu.cn/*
+  ```
+
+  ```
+  https://webvpn.bit.edu.cn/https/*
+  https://webvpn.bit.edu.cn/http/*
+  ```
+
+  详细规则请参考 [WebExtensions 的匹配模式](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Match_patterns)。
+
 ## 安装
 
 - **Chromium**（Chrome、Edge、…）
@@ -44,6 +69,7 @@
 - `tabs`：在新标签页打开转换后的 URL。
 - `storage`：存储设置。
 - （可选）`clipboardWrite`：复制转换后的 URL。
+- （可选）`webRequest`、`webRequestBlocking`、`<all_urls>`：修改网络请求。
 
 ### 图标？
 

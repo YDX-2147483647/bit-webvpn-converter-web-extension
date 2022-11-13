@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BIT URL 转换器</title>
+    <link rel="stylesheet" href="./options.css">
     <script src="./options.js" type="module"></script>
 </head>
 
@@ -14,6 +15,22 @@
             <input type="checkbox" id="enable-menu" name="enable-menu">
             <label for="enable-menu">是否在右键菜单添加“转换并在新标签页打开”</label>
         </div>
+        <fieldset>
+            <legend>重定向</legend>
+            <div class="browser-style">
+                <input type="checkbox" id="enable-redirector" name="enable-redirector">
+                <label for="enable-redirector">是否启用重定向（若启用，保存时会向您申请）</label>
+            </div>
+            <div class="browser-style">
+                <label for="urls-filters">重定向范围</label>
+                <p>每行一个。示例和详细规则请参考<a href="https://github.com/YDX-2147483647/bit-webvpn-converter-web-extension">仓库 Read
+                        Me</a> 和 <a
+                        href="https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Match_patterns">WebExtensions
+                        的匹配模式</a>。</p>
+                <textarea id="urls-filters" name="urls-filters" rows="5" cols="40"
+                    placeholder="*://jwms.bit.edu.cn/*"></textarea>
+            </div>
+        </fieldset>
         <div>
             <button class="browser-style" type="submit">保存</button>
         </div>

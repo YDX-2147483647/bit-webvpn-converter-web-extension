@@ -1,7 +1,7 @@
 {
     "name": "BIT URL 转换器",
     "description": "转换 BIT 内外 URL。",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "manifest_version": 2,
     "browser_specific_settings": {
         "gecko": {
@@ -14,7 +14,10 @@
         "storage"
     ],
     "optional_permissions": [
-        "clipboardWrite"
+        "clipboardWrite",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
     ],
     "background": {
         "page": "background/background.html",
