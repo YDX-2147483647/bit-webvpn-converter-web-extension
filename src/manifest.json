@@ -17,7 +17,7 @@
         "clipboardWrite"
     ],
     "background": {
-        "page": "background.html",
+        "page": "background/background.html",
         "persistent": false
     },
     "options_ui": {
