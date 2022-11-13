@@ -65,11 +65,13 @@
 
 ### 为何需要□□权限？
 
-- `menus`：在右键菜单增加转换按钮。
-- `tabs`：在新标签页打开转换后的 URL。
+> 括号内为涉及的功能。
+
+- `menus`：在右键菜单增加转换按钮。（右键菜单）
+- `tabs`：在新标签页打开转换后的 URL。（右键菜单、工具栏）
 - `storage`：存储设置。
-- （可选）`clipboardWrite`：复制转换后的 URL。
-- （可选）`webRequest`、`webRequestBlocking`、`<all_urls>`：修改网络请求。
+- （可选）`clipboardWrite`：复制转换后的 URL。（工具栏）
+- （可选）`webRequest`、`webRequestBlocking`、`<all_urls>`：修改网络请求。（自动重定向）
 
 ### 图标？
 
