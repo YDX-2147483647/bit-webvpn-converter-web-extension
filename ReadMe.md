@@ -40,6 +40,7 @@
   *://jwms.bit.edu.cn/*
   *://mec.bit.edu.cn/*
   *://student.bit.edu.cn/*
+  *://*.info.bit.edu.cn/*
   ```
 
   ```
