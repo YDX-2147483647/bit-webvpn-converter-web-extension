@@ -56,7 +56,9 @@
 
   请移步[另一仓库](https://github.com/YDX-2147483647/bit-webvpn-converter-bidirectional)。
 
-- **[Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)**
+- **Firefox**：[已上架 AMO](https://addons.mozilla.org/firefox/addon/bit-webvpn-converter/)，直接添加即可。
+
+  以下是[开发测试方法](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)。
 
   1. 下载或克隆本仓库。
   2. 在 Firefox 地址栏输入`about:debugging` →（侧边栏）[此 Firefox](about:debugging#/runtime/this-firefox)。
