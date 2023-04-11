@@ -1,6 +1,6 @@
 # BIT WebVPN URL 双向转换器（浏览器扩展）
 
-![Mozilla Add-on rating](https://img.shields.io/amo/stars/bit-webvpn-converter) ![Mozilla Add-on users](https://img.shields.io/amo/users/bit-webvpn-converter)
+![Mozilla Add-on version](https://img.shields.io/amo/v/bit-webvpn-converter)![Mozilla Add-on rating](https://img.shields.io/amo/stars/bit-webvpn-converter) ![Mozilla Add-on users](https://img.shields.io/amo/users/bit-webvpn-converter)
 
 这个转换器相互转换内外 URL（普通校内网 URL 与校外网 WebVPN URL）。
 
